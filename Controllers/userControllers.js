@@ -70,7 +70,8 @@ const Login = async(req,res) =>{
              res.status(200).send({
                 message : "User Logined Successfully",
                 token,
-                Role :findUser.Role
+                Role :findUser.Role,
+                userName : findUser.Username
              })
         }
 
